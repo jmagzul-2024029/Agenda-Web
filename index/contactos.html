@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactos</title>
+    <link rel="stylesheet" href="../styles/contactos.css">
+    <link rel="stylesheet" href="../styles/favoritos.css">
+</head>
+
+<body class="body">
+    <div class="background">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <div>
+        <!-- Encabezado -->
+        <header class="header">
+            <h1>AGENDA WEB</h1>
+            <nav>
+                <a href="../index/perfil.html">PERFIL</a>
+                <a href="../index/contactos.html">CONTACTOS</a>
+                <a href="../index/favoritos.html">FAVORITOS</a>
+                <a href="../index/todo-list.html">TODO LIST</a>
+                <a href="../index.html" class="salir">SALIR</a>
+            </nav>
+        </header>
+
+        <!--Contenido-->
+        <div class="container">
+            <div class="top">
+                <h2 id="nuevo">Mis Contactos</h2>
+                <a href="nuevo-contacto.html" class="btn">Nuevo Contacto</a>
+            </div>
+
+            <!-- LISTA DE CONTACTOS -->
+            <section class="lista-contactos">
+                <!--URL de los datos del contacto-->
+                <a href="detalle-contacto.html?nombre=Juan Coyote&tel=1351-3151&correo=juancoyote@gmail.com&emp=Tesla&cumple=23/11/2015"
+                    class="contacto">
+
+                    <div class="icono-favorito">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+
+                    <h3>Juan Coyote</h3>
+                    <p>📞 1351-3151</p>
+                    <p>📧 juancoyote@gmail.com</p>
+                    <!--<p>23/11/2015</p>-->
+                </a>
+
+                <a href="detalle-contacto.html?nombre=Melvin Pérez&tel=6543-2109&correo=melvinperez@gmail.com&emp=Pollo Pinulito&cumple=12/01/2005"
+                    class="contacto">
+
+                    <div class="icono-favorito">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+
+                    <h3>Melvin Pérez</h3>
+                    <p>📞 6543-2109</p>
+                    <p>📧 melvinperez@gmail.com</p>
+                    <!--<p>12/01/2005</p>-->
+                </a>
+
+                <a href="detalle-contacto.html?nombre=Pedro Torres&tel=6848-3544&correo=pedrotorres@gmail.com&emp=Kinal&cumple=27/11/1988"
+                    class="contacto">
+
+                    <div class="icono-no-favorito">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+
+                    <h3>Pedro Torres</h3>
+                    <p>📞 6848-3544</p>
+                    <p>📧 pedrotorres@gmail.com</p>
+                    <!--<p>27/11/1988</p>-->
+                </a>
+
+                <a href="detalle-contacto.html?nombre=Ana Gómez&tel=6543-2109&correo=anagomez@gmail.com&emp=Facebook&cumple=22/05/1992"
+                    class="contacto">
+
+                    <div class="icono-no-favorito">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+
+                    <h3>Ana Gómez</h3>
+                    <p>📞 6543-2109</p>
+                    <p>📧 anagomez@gmail.com</p>
+                    <!--<p>22/05/1992</p>-->
+                </a>
+
+                <a href="detalle-contacto.html?nombre=Carlos Ruiz&tel=3210-9876&correo=carlosruiz@gmail.com&emp=Fornite&cumple=13/05/2008"
+                    class="contacto">
+
+                    <div class="icono-no-favorito">
+                        <svg viewBox="0 0 24 24">
+                            <path
+                                d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
+                        </svg>
+                    </div>
+
+                    <h3>Carlos Ruiz</h3>
+                    <p>📞 3210-9876</p>
+                    <p>📧 carlosruiz@gmail.com</p>
+                    <!--<p>13/05/2008</p>-->
+                </a>
+
+            </section>
+
+        </div>
+</body>
+
+</html>
