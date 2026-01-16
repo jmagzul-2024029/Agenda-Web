@@ -1,0 +1,277 @@
+/* CONTENEDOR */
+.detalle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1724405143873-cdaa5cac918e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBhenVsJTIwY2xhcm98ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+/* TARJETA */
+.card-detalle {
+    background: #002791e6;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+/* AVATAR */
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#llamada {
+    background-image: url("../Images/Llamada.png");
+}
+
+#llamada:hover {
+    transform: scale(1.03);
+}
+
+#whatsapp {
+    background-image: url("../Images/Whatsapp.png");
+}
+
+#whatsapp:hover {
+    transform: scale(1.09);
+}
+
+#sms {
+    background-image: url("../Images/sms.png");
+}
+
+#sms:hover {
+    transform: scale(1.08);
+}
+
+/* INFO */
+.info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* CONTENEDOR */
+.detalle-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1724405143873-cdaa5cac918e?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Zm9uZG8lMjBhenVsJTIwY2xhcm98ZW58MHx8MHx8fDA%3D");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px;
+}
+
+/* TARJETA */
+.card-detalle {
+    background: #002791e6;
+    height: 100%;
+    width: 100%;
+    max-width: 400px;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    color: white;
+}
+
+/* AVATAR */
+.avatar {
+    width: 120px;
+    height: 120px;
+    background-image: url("https://static.vecteezy.com/system/resources/previews/009/292/244/non_2x/default-avatar-icon-of-social-media-user-vector.jpg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.banners {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.banner {
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#llamada {
+    background-image: url("../Images/Llamada.png");
+}
+
+#llamada:hover {
+    transform: scale(1.1);
+}
+
+#whatsapp {
+    background-image: url("../Images/Whatsapp.png");
+}
+
+#whatsapp:hover {
+    transform: scale(1.1);
+}
+
+#sms {
+    background-image: url("../Images/sms.png");
+}
+
+#sms:hover {
+    transform: scale(1.1);
+}
+
+/* INFO */
+.info p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .detalle-container {
+        padding: 15px;
+    }
+
+    .card-detalle {
+        max-width: 350px;
+        padding: 20px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 20px;
+    }
+
+    .info p {
+        font-size: 15px;
+    }
+
+    .banner {
+        width: 45px;
+        height: 45px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+    .banners {
+        gap: 12px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    .detalle-container {
+        padding: 10px;
+        align-items: flex-start;
+        padding-top: 20px;
+    }
+
+    .card-detalle {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+
+    .avatar {
+        width: 90px;
+        height: 90px;
+        margin-bottom: 15px;
+    }
+
+    .card-detalle h2 {
+        font-size: 20px;
+        margin-bottom: 15px;
+    }
+
+    .info p {
+        font-size: 14px;
+        margin: 8px 0;
+    }
+
+    .banner {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .banners {
+        gap: 10px;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 360px) {
+    .card-detalle {
+        padding: 15px 10px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .card-detalle h2 {
+        font-size: 18px;
+    }
+
+    .info p {
+        font-size: 13px;
+        margin: 7px 0;
+    }
+
+    .banner {
+        width: 35px;
+        height: 35px;
+    }
+}
