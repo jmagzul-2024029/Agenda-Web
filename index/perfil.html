@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link rel="stylesheet" href="../styles/contactos.css">
+    <link rel="stylesheet" href="../styles/perfil.css">
+</head>
+
+<body>
+    <div class="stars"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+    <div class="shooting-star"></div>
+
+    <div class="page-content">
+        <header class="header">
+            <h1>PERFIL LOGUEADO</h1>
+            <nav>
+                <a onclick="history.back()">VOLVER</a>
+            </nav>
+        </header>
+
+        <div class="profile-container">
+            <div class="profile-card">
+
+                <div class="profile-header">
+                    <div class="avatar" id="avatarInitials"></div>
+                    <h2 class="profile-name" id="profileName"></h2>
+                    <p class="profile-email" id="profileEmail"></p>
+                </div>
+
+                <div class="profile-info">
+                    <div class="info-item">
+                        <span class="label">Usuario:</span>
+                        <span class="value" id="profileUsername"></span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Teléfono:</span>
+                        <span class="value" id="profilePhone"></span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Dirección:</span>
+                        <span class="value" id="profileAddress"></span>
+                    </div>
+
+                    <div class="info-item">
+                        <span class="label">Fecha de registro:</span>
+                        <span class="value" id="profileDate"></span>
+                    </div>
+                </div>
+
+                <div class="profile-actions">
+                    <button class="btn edit">Editar perfil</button>
+                    <button class="btn logout">Cerrar sesión</button>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="../script/perfil.js"></script>
+</body>
+
+</html>
