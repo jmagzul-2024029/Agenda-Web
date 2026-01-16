@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    background: linear-gradient(135deg, #7972ff 0%, #1b1856 100%);
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    font-weight: bold;
+    color: white;
+}
+
+.profile-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-card {
+    background-color: #ffffff;
+    width: 380px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.profile-header {
+    background-color: #040055;
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    margin-bottom: 10px;
+}
+
+.profile-name {
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+.profile-email {
+    font-size: 14px;
+    opacity: 0.9;
+}
+
+.profile-info {
+    padding: 20px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+.label {
+    font-weight: bold;
+    color: #555;
+}
+
+.value {
+    color: #333;
+}
+
+.profile-actions {
+    display: flex;
+    gap: 10px;
+    padding: 20px;
+}
+
+.btn {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background 0.3s;
+}
+
+.btn.edit {
+    background-color: #4f46e5;
+    color: white;
+}
+
+.btn.edit:hover {
+    background-color: #4338ca;
+}
+
+.btn.logout {
+    background-color: #e5e7eb;
+    color: #111827;
+}
+
+.btn.logout:hover {
+    background-color: #d1d5db;
+}
+
+.page-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* fondo animado */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(to bottom, #0b0b2b, #1b2735 70%, #090a0f);
+    overflow: hidden;
+}
+
+.stars {
+    width: 1px;
+    height: 1px;
+    position: absolute;
+    background: white;
+    box-shadow: 2vw 5vh 2px white, 10vw 8vh 2px white, 15vw 15vh 1px white,
+        22vw 22vh 1px white, 28vw 12vh 2px white, 32vw 32vh 1px white,
+        38vw 18vh 2px white, 42vw 35vh 1px white, 48vw 25vh 2px white,
+        53vw 42vh 1px white, 58vw 15vh 2px white, 63vw 38vh 1px white,
+        68vw 28vh 2px white, 73vw 45vh 1px white, 78vw 32vh 2px white,
+        83vw 48vh 1px white, 88vw 20vh 2px white, 93vw 52vh 1px white,
+        98vw 35vh 2px white, 5vw 60vh 1px white, 12vw 65vh 2px white,
+        18vw 72vh 1px white, 25vw 78vh 2px white, 30vw 85vh 1px white,
+        35vw 68vh 2px white, 40vw 82vh 1px white, 45vw 92vh 2px white,
+        50vw 75vh 1px white, 55vw 88vh 2px white, 60vw 95vh 1px white,
+        65vw 72vh 2px white, 70vw 85vh 1px white, 75vw 78vh 2px white,
+        80vw 92vh 1px white, 85vw 82vh 2px white, 90vw 88vh 1px white,
+        95vw 75vh 2px white;
+    animation: twinkle 8s infinite linear;
+}
+
+.shooting-star {
+    position: absolute;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, white, transparent);
+    animation: shoot 3s infinite ease-in;
+}
+
+.shooting-star:nth-child(1) {
+    top: 20%;
+    left: -100px;
+    animation-delay: 0s;
+}
+
+.shooting-star:nth-child(2) {
+    top: 35%;
+    left: -100px;
+    animation-delay: 1s;
+}
+
+.shooting-star:nth-child(3) {
+    top: 50%;
+    left: -100px;
+    animation-delay: 2s;
+}
+
+@keyframes twinkle {
+
+    0%,
+    100% {
+        opacity: 0.8;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes shoot {
+    0% {
+        transform: translateX(0) translateY(0) rotate(25deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateX(120vw) translateY(50vh) rotate(25deg);
+        opacity: 0;
+    }
+}
+
+/* Additional twinkling stars with different animation timing */
+.stars::after {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    background: white;
+    box-shadow: 8vw 12vh 2px white, 16vw 18vh 1px white, 24vw 25vh 2px white,
+        33vw 15vh 1px white, 41vw 28vh 2px white, 49vw 35vh 1px white,
+        57vw 22vh 2px white, 65vw 42vh 1px white, 73vw 28vh 2px white,
+        81vw 48vh 1px white, 89vw 32vh 2px white, 97vw 45vh 1px white,
+        3vw 68vh 2px white, 11vw 75vh 1px white, 19vw 82vh 2px white,
+        27vw 88vh 1px white, 35vw 72vh 2px white, 43vw 85vh 1px white,
+        51vw 92vh 2px white, 59vw 78vh 1px white;
+    animation: twinkle 6s infinite linear reverse;
+}
+
+/* ===== Responsive ===== */
+
+/* Tablet */
+@media (max-width: 768px) {
+    .profile-card {
+        width: 90%;
+        max-width: 380px;
+    }
+
+    .profile-name {
+        font-size: 20px;
+    }
+
+    .info-item {
+        font-size: 14px;
+    }
+}
+
+/* Móviles */
+@media (max-width: 480px) {
+    body {
+        overflow-y: auto;
+    }
+
+    .profile-container {
+        padding: 20px;
+        min-height: auto;
+    }
+
+    .profile-card {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .profile-header {
+        padding: 25px 15px;
+    }
+
+    .avatar {
+        width: 100px;
+        height: 100px;
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+
+    .profile-name {
+        font-size: 18px;
+    }
+
+    .profile-email {
+        font-size: 13px;
+    }
+
+    .profile-info {
+        padding: 15px;
+    }
+
+    .info-item {
+        flex-direction: column;
+        gap: 5px;
+        margin-bottom: 15px;
+        font-size: 13px;
+    }
+
+    .label {
+        font-size: 12px;
+    }
+
+    .profile-actions {
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+
+/* Móviles pequeños */
+@media (max-width: 360px) {
+    .profile-header {
+        padding: 20px 10px;
+    }
+
+    .avatar {
+        width: 80px;
+        height: 80px;
+        font-size: 32px;
+    }
+
+    .profile-name {
+        font-size: 16px;
+    }
+
+    .profile-info {
+        padding: 12px;
+    }
+
+    .info-item {
+        font-size: 12px;
+    }
+}
