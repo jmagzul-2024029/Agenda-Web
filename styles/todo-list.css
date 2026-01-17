@@ -1,0 +1,305 @@
+.body {
+    background-image: url("https://i.pinimg.com/736x/66/4b/6a/664b6af1e2428aed06246af0c6581efb.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.263);
+    border-radius: 8px;
+}
+
+.container h4 {
+    margin-bottom: 20px;
+    color: #000000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.todo-form {
+    display: flex;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.todo-form input,
+.todo-form select,
+.todo-form button {
+    padding: 8px;
+    font-size: 15px;
+}
+
+#lista-tareas {
+    list-style: none;
+    padding: 0;
+}
+
+.tarea {
+    background: rgba(255, 255, 255, 0.844);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+
+#tarea {
+    background: white;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 500px;
+}
+
+#prioridad {
+    background: #000291;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    border: black 2px solid;
+}
+
+#prioridad:hover {
+    transform: scale(1.02);
+}
+
+.alta {
+    border-left: 6px solid rgb(255, 0, 0);
+}
+
+.media {
+    border-left: 6px solid rgb(255, 225, 0);
+}
+
+.baja {
+    border-left: 6px solid rgb(45, 208, 0);
+}
+
+.acciones button {
+    margin-left: 5px;
+}
+
+/* Botones */
+.button {
+    --main-focus: #2d8cf0;
+    --font-color: #dedede;
+    --bg-color-sub: #0004ff65;
+    --bg-color: #00265f;
+    --main-color: #dedede;
+    position: relative;
+    width: 150px;
+    height: 38px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    border: 2px solid #0f2945;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 2px;
+}
+
+.button,
+.button__icon,
+.button__text {
+    transition: all 0.3s;
+}
+
+.button .button__text {
+    transform: translateX(25px);
+    color: var(--font-color);
+    font-weight: bold;
+}
+
+.button .button__icon {
+    position: absolute;
+    transform: translateX(109px);
+    height: 100%;
+    width: 39px;
+    background-color: var(--bg-color-sub);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button .svg {
+    width: 20px;
+    stroke: var(--main-color);
+}
+
+.button:hover {
+    background: var(--bg-color);
+}
+
+.button:hover .button__text {
+    color: transparent;
+}
+
+.button:hover .button__icon {
+    width: 148px;
+    transform: translateX(0);
+}
+
+.button:active {
+    transform: translate(3px, 3px);
+    box-shadow: 0px 0px var(--main-color);
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Tablets */
+@media (max-width: 768px) {
+    .container {
+        max-width: 95%;
+        padding: 15px;
+    }
+
+    .container h4 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+
+    .todo-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .todo-form input,
+    .todo-form select {
+        width: 100%;
+    }
+
+    .tarea,
+    #tarea {
+        min-width: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .acciones {
+        width: 72%;
+        display: flex;
+        gap: 5px;
+    }
+
+    .acciones button {
+        flex: 1;
+        margin-left: 0;
+    }
+}
+
+/* Teléfonos */
+@media (max-width: 480px) {
+    .container {
+        padding: 12px;
+        margin: 10px;
+        border-radius: 6px;
+    }
+
+    .container h4 {
+        font-size: 20px;
+        margin-bottom: 12px;
+    }
+
+    .todo-form {
+        gap: 8px;
+    }
+
+    .todo-form input,
+    .todo-form select,
+    .todo-form button {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .tarea,
+    #tarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    #prioridad {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .button {
+        height: 45px;
+    }
+
+    .button .button__text {
+        transform: translateX(20px);
+        font-size: 14px;
+    }
+
+    .button .button__icon {
+        transform: translateX(calc(100% - 39px));
+    }
+
+    .acciones button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .alta,
+    .media,
+    .baja {
+        border-left-width: 4px;
+    }
+}
+
+/* teléfonos pequeños */
+@media (max-width: 360px) {
+    .container {
+        padding: 10px;
+        margin: 5px;
+    }
+
+    .container h4 {
+        font-size: 18px;
+    }
+
+    .todo-form input,
+    .todo-form select,
+    .todo-form button {
+        padding: 8px;
+        font-size: 13px;
+    }
+
+    .tarea,
+    #tarea,
+    #prioridad {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .button {
+        height: 40px;
+    }
+
+    .button .button__text {
+        font-size: 13px;
+    }
+
+    .acciones button {
+        padding: 6px;
+        font-size: 12px;
+    }
+}

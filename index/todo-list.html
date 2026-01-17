@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="../styles/contactos.css">
+    <link rel="stylesheet" href="../styles/todo-list.css">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>LISTA DE PENDIENTES</h1>
+        <nav>
+            <a href="../index/perfil.html">MI PERFIL</a>
+            <a href="../index/contactos.html">CONTACTOS</a>
+            <a href="../index/favoritos.html">FAVORITOS</a>
+            <a href="../index/todo-list.html">TODO LIST</a>
+            <a href="../index.html" class="salir">SALIR</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h4>Pendientes</h4>
+
+        <!-- Formulario -->
+        <div class="todo-form">
+            <input type="text" id="tarea" placeholder="Escriba una tarea a realizar">
+
+            <select id="prioridad">
+                <option value="alta">Alta</option>
+                <option value="media">Media</option>
+                <option value="baja">Baja</option>
+            </select>
+
+            <button onclick="agregarTarea()" type="button" class="button">
+                <span class="button__text">Agregar</span>
+                <span class="button__icon" margin="0"><svg xmlns="http://www.w3.org/2000/svg" width="24" viewBox="0 0 24 24"
+                        stroke-width="2" stroke-linejoin="round" stroke-linecap="round" stroke="currentColor"
+                        height="24" fill="none" class="svg">
+                        <line y2="19" y1="5" x2="12" x1="12"></line>
+                        <line y2="12" y1="12" x2="19" x1="5"></line>
+                    </svg></span>
+            </button>
+        </div>
+
+        <!-- Lista de tareas -->
+        <ul id="lista-tareas"></ul>
+
+    </div>
+
+    <script src="../script/todo.js"></script>
+</body>
+
+</html>
